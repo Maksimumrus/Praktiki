@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PR-1</string>
+    <string-array name="colors_array">
+        <item>Красный</item>
+        <item>Синий</item>
+        <item>Зеленый</item>
+        <item>Черный</item>
+        <item>Серый</item>
+    </string-array>
+
+</resources>
