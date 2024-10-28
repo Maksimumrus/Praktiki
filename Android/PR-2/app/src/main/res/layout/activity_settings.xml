@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Выберите цвет фона:"
+                android:textSize="24dp" />
+
+            <Spinner
+                android:id="@+id/Spinnercolor"
+                android:layout_width="367dp"
+                android:layout_height="55dp"
+                android:layout_marginBottom="24dp"
+                android:entries="@array/colors_array" />
+
+            <TextView
+                android:id="@+id/VLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Громкость: 50"
+                android:textSize="24sp" />
+
+            <SeekBar
+                android:id="@+id/BarVolume"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:max="100"
+                android:progress="50" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Уровень сложности:"
+                android:textSize="20dp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupDifficulty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rbEasy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Легкий"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/rbMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Средний"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/rbHard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Сложный"
+                    android:textSize="20dp" />
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center|bottom"
+        android:layout_marginBottom="100dp">
+
+        <Button
+            android:id="@+id/btnSaveSettings"
+            android:layout_width="382dp"
+            android:layout_height="78dp"
+            android:layout_marginTop="20dp"
+            android:text="Сохранить настройки"
+            android:textSize="20dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
